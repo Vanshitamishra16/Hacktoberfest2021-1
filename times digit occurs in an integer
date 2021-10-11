@@ -1,0 +1,17 @@
+#include <iostream.h>
+using namespace std;
+
+int main(){
+    int num, digit,count=0;
+    cout<<"enter the num and digit"<<endl;
+    cin>>num>>digit;
+    while(num!=0){
+        int k=num%10;
+        num=num/10;
+        if(k==digit){
+           count++;
+        }
+    }
+    cout<<"the times the given digit is repetaed is "<<count<<endl;
+    return 0;
+}
